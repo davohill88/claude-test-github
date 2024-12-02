@@ -19,11 +19,12 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
-        .content {
+        .content, .features, .contact {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         h2 {
             color: #3498db;
@@ -31,14 +32,57 @@
         p {
             color: #34495e;
         }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome!</h1>
     <p>This is a simple webpage created by Claude.</p>
+    
     <div class="content">
         <h2>About</h2>
-        <p>This page demonstrates a basic HTML structure that we'll enhance with CSS later.</p>
+        <p>This page demonstrates a basic HTML structure with multiple sections and professional styling.</p>
     </div>
+
+    <div class="features">
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li>Clean and modern design</li>
+            <li>Responsive layout</li>
+            <li>Professional typography</li>
+            <li>Organized content sections</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: example@domain.com</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Address: 123 Main Street, Anytown, ST 12345</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
