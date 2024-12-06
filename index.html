@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Page</title>
+    <title>Welcome to My Christmas Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,6 +12,7 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #f5f5f5;
+            background-image: linear-gradient(to bottom, #f5f5f5, #e8f4f8);
         }
         h1 {
             color: #2c3e50;
@@ -19,26 +20,87 @@
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
-        .content {
+        .content, .christmas-section {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         h2 {
             color: #3498db;
         }
+        .christmas-section h2 {
+            color: #2c662d;
+        }
         p {
             color: #34495e;
+        }
+        .tree-facts {
+            list-style-type: none;
+            padding: 0;
+        }
+        .tree-facts li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .tree-facts li:before {
+            content: "🎄";
+            position: absolute;
+            left: 0;
+        }
+        .festive-note {
+            background-color: #f8e8e8;
+            border-left: 4px solid #c41e3a;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .decoration-tips {
+            background-color: #e8f8e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
     <h1>Welcome!</h1>
     <p>This is a simple webpage created by Claude.</p>
+    
     <div class="content">
         <h2>About</h2>
-        <p>This page demonstrates a basic HTML structure that we'll enhance with CSS later.</p>
+        <p>This page demonstrates a basic HTML structure with some festive Christmas content!</p>
+    </div>
+
+    <div class="christmas-section">
+        <h2>Christmas Trees: A Holiday Tradition</h2>
+        <p>Christmas trees are one of the most beloved holiday traditions, bringing joy and festive spirit to homes around the world.</p>
+        
+        <h3>Popular Christmas Tree Varieties</h3>
+        <ul class="tree-facts">
+            <li>Balsam Fir - Known for its dark-green needles and wonderful aroma</li>
+            <li>Fraser Fir - Popular for its excellent needle retention and strong branches</li>
+            <li>Blue Spruce - Distinctive blue-gray color and perfect symmetrical shape</li>
+            <li>Scotch Pine - Classic Christmas tree with excellent needle retention</li>
+        </ul>
+
+        <div class="decoration-tips">
+            <h3>Tree Decorating Tips</h3>
+            <p>Follow these steps for a beautifully decorated tree:</p>
+            <ol>
+                <li>Start with lights, working from the inside out</li>
+                <li>Add your main garland or ribbon</li>
+                <li>Hang larger ornaments first, spacing them evenly</li>
+                <li>Fill in with smaller ornaments and specialty pieces</li>
+                <li>Finish with tinsel or icicles for extra sparkle</li>
+            </ol>
+        </div>
+
+        <div class="festive-note">
+            <p><strong>Holiday Care Tip:</strong> Keep your tree fresh throughout the season by ensuring it always has plenty of water. A fresh tree can drink up to a gallon of water in the first 24 hours!</p>
+        </div>
     </div>
 </body>
 </html>
